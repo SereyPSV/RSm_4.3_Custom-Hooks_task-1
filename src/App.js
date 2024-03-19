@@ -1,6 +1,13 @@
-import "./App.css";
+import { useViewportSize } from './hooks/useViewportSize';
+import './App.css';
 
 function App() {
-  return <div className="App"></div>;
+	const { height, width } = useViewportSize();
+
+	return (
+		<div className="App">
+			Width: {width}, height: {height}
+		</div>
+	);
 }
 export default App;
