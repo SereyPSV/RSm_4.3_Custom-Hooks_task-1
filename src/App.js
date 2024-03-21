@@ -1,6 +1,17 @@
-import "./App.css";
+import { useLocalStorage } from './useLocalStorage.ts';
+import './App.css';
 
 function App() {
-  return <div className="App"></div>;
+	const [token, { setItem, removeItem }] = useLocalStorage('token');
+
+	return (
+		<div>
+			<p>Твой токен: {token}</p>
+			<div>
+				<button onClick={() => setItem('new-token')}>Задать токен</button>
+				<button onClick={() => removeItem()}>Удалить токен</button>
+			</div>
+		</div>
+	);
 }
 export default App;
