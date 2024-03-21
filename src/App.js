@@ -1,4 +1,4 @@
-import { useLocalStorage } from './useLocalStorage';
+import { useLocalStorage } from './useLocalStorage.ts';
 import './App.css';
 
 function App() {
