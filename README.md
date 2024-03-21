@@ -48,3 +48,7 @@ type UseLocalStorage = (key: string) => ReturnValue;
 ---
 
 ---
+
+1. Задал основные функции хука: getTokenStorage, setItem, removeItem.
+2. Добавил логики чтобы исключить лишние рендеры и парсинги.
+3. Думал useEffect использовать, но зачем.
