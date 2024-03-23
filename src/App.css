@@ -1,3 +1,17 @@
-.App {
-  text-align: center;
+.app {
+	width: 300vh;
+	height: 300vw;
+	background-image: linear-gradient(30deg, red, yellow, green);
+	position: relative;
+
+	p {
+		position: fixed;
+		top: 30px;
+		left: 40vw;
+	}
+	button {
+		position: fixed;
+		top: 80px;
+		left: 40vw;
+	}
 }
