@@ -1,6 +1,10 @@
-import "./App.css";
+import { useToggle } from './useToggle';
+
+import './App.css';
 
 function App() {
-  return <div className="App"></div>;
+	const [value, toggle] = useToggle(['blue', 'orange', 'cyan', 'teal']);
+
+	return <button onClick={() => toggle()}>{value}</button>;
 }
 export default App;
